@@ -1,0 +1,28 @@
+
+---
+
+# 🔎 Issues & Problems with Current Code (based on notebook outputs)
+
+### 1. **Overfitting**
+- Training accuracy is high but validation accuracy diverges.
+- Suggestion → Add more augmentation, dropout, weight decay, or use pretrained models.
+
+### 2. **Class Imbalance**
+- TB images are fewer → model struggles to distinguish TB vs Pneumonia.
+- Suggestion → Balanced sampling or synthetic oversampling.
+
+### 3. **Limited Metrics**
+- Only accuracy is shown in some outputs.
+- Suggestion → Always report **Precision, Recall, F1** (important in healthcare, esp. for false negatives).
+
+### 4. **Explainability Missing**
+- No saliency / Grad-CAM visualizations to show model reasoning.
+- Doctors will need interpretability before trusting predictions.
+
+### 5. **Ethical Risks**
+- Model might generalize poorly on data from different hospitals/patient demographics.
+- Could reinforce healthcare disparities if not tested broadly.
+
+---
+
+👉 Would you like me to also create a **requirements.txt** (based on the imports in your notebook) so your repo is fully reproducible?
