@@ -94,4 +94,4 @@ cd Pneumonia_TB_classification
 pip install -r requirements.txt
 
 # Run notebook
-jupyter notebook Pneumonia_TB_classification_NN.ipynb
+jupyter notebook Pneumonia_TB_classification_NN_fixed.ipynb
